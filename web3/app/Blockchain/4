@@ -1,0 +1,7 @@
+{
+    "FROM": "DNDSCAN",
+    "AMOUNT": 50000,
+    "TO": "zzubrikkanov",
+    "HASH": "90cf056a9988e4d9860e15024bd8562a",
+    "DATE": "05-11-2021 22:03"
+}

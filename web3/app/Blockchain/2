@@ -1,0 +1,7 @@
+{
+    "FROM": "Kate",
+    "AMOUNT": 10,
+    "TO": "Vasya",
+    "HASH": "fdca6e9b9a1bfd888a196efd4bc1c34b",
+    "DATE": "05-11-2021 20:42"
+}

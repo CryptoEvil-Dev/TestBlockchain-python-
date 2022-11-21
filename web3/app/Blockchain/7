@@ -1,0 +1,7 @@
+{
+    "FROM": "DNDSCAN",
+    "AMOUNT": "50000000000",
+    "TO": "PVKH_3D",
+    "HASH": "95b3d1db2cf6461969dbb60c87f75c93",
+    "DATE": "08-11-2021 14:44"
+}

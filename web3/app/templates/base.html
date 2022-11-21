@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<style>
+body {
+    background-color: #5676ba;
+}
+
+#header{
+    background-color: #123456;
+    color: #869eb7;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    font: 40px/5px Menlo,Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+    border-radius: 5px;
+
+}
+a {
+    margin-left:50px;
+    color:white;
+}
+
+{% block style %}
+
+{% endblock %}
+</style>
+<body>
+<div id="header">DNDSCAN</div>
+<div id="header"><span><a href="/">MAIN</a></span><span id="sp"><a href="/send">SEND</a></span><span id="sp"><a href="/check">CHECK</a></span></div>
+{% block body %}
+
+{% endblock %}
+</body>
+</html>

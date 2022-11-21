@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block title %}
+SEND TOKEN
+{% endblock %}
+{% block style %}
+
+#containerBlocks{
+    background-color: #20345f;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    font: 30px/40px Arial Black;
+}
+
+#block{
+    background-color: black;
+    margin-top: 25px;
+    width: 50%;
+    margin-left: 25%;
+    color: #0d9702;
+    font-family: Menlo;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+input {
+    width: 250px;
+    height: 50px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: silver;
+    color: black;
+    opacity:0.8;
+}
+form {
+    margin-left: 25%;
+    margin-top: 50px;
+}
+input:hover {
+    opacity:1;
+}
+{% endblock %}
+{% block body %}
+
+<form action="/send" method="post">
+    <input type="text" placeholder="NAME" name="name" value="" required />
+    <input type="text" placeholder="AMOUNT" name="amount" value="" required />
+    <input type="submit" value="SEND" />
+
+
+</form>
+
+
+{% endblock %}

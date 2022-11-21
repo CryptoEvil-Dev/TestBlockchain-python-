@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}
+DNDSCAN.org
+{% endblock %}
+{% block style %}
+#containerBlocks{
+    background-color: #20345f;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    font: 30px/40px Arial Black;
+}
+
+#block{
+    background-color: black;
+    margin-top: 25px;
+    width: 50%;
+    margin-left: 25%;
+    color: #0d9702;
+    font-family: Menlo;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+{% endblock %}
+{% block body %}
+<div id="containerBlocks">
+    {% for bl in block %}
+    <div id="block">
+        {{ bl }}
+    </div>
+    {% endfor %}
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block title %}
+DNDSCAN
+{% endblock %}
+{% block style %}
+
+#containerBlocks{
+    background-color: #20345f;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    font: 30px/40px Arial Black;
+}
+
+#block{
+    background-color: black;
+    margin-top: 25px;
+    width: 50%;
+    margin-left: 25%;
+    color: #0d9702;
+    font: 18px/18px Menlo;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+}
+#context {
+    color: red;
+    margin-right: 50px;
+}
+{% endblock %}
+{% block body %}
+<div id="=containerBlocks">
+    {% for b in id_b %}
+    <p id="block">
+        <span id="context">ID:</span> {{ id_b[b] }}<br/>
+        <span id="context">FROM:</span> {{from_b[b]}}<br/>
+        <span id="context">AMOUNT:</span> {{amount_b[b]}} <span style="color:yellow;">DND</span><br/>
+        <span id="context">TO:</span> {{to_b[b]}}<br/>
+        <span id="context">HASH:</span> {{hash_b[b]}}<br/>
+        <span id="context">TIME:</span> {{time_b[b]}}</p>
+    {% endfor %}
+</div>
+
+<script>
+
+</script>
+
+{% endblock %}
